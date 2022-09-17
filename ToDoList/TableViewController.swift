@@ -25,6 +25,11 @@ class TableViewController: UITableViewController {
             appearance.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black]
             self.navigationController?.navigationBar.standardAppearance = appearance
             self.navigationController?.navigationBar.scrollEdgeAppearance = appearance
+            
+            //背景色を自由に決めたいとき
+            //let secondColor = UIColor(hue: 194, saturation: 82, brightness: 100, alpha: 1.0)
+            //self.navigationController?.navigationBar.barTintColor = secondColor
+            // self.navigationController?.toolbar.tintColor = secondColor
         }
         
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(self.didTapAddItemButton(_:)))
